@@ -11,13 +11,13 @@ export default gql`
         error: String
     }
     
-    extend type Query {
+    type Query {
         seeUser(
             id: Int!
         ): User!
     }
 
-    extend type Mutation {
+    type Mutation {
         createUser(
             email: String!
             name: String
